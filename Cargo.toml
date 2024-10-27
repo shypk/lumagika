@@ -1,0 +1,16 @@
+[package]
+name = "lumagika"
+version = "0.1.0"
+edition = "2021"
+
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+magika = { version = "0.1.0-rc.1" }
+mlua = { version = "0.10.0", features = ["lua51","module"] }
+mlua-sys = { version = "0.6.3", features = ["lua51","module"] }
+
+[dependencies.ort]
+version = "2.0.0-rc.5"
